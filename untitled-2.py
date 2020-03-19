@@ -1,7 +1,7 @@
 import vk_api
 
 
-token = 'òîêåí'
+token = 'our_token'
 
 vk=vk_api.VkApi(token=token)
 vk._auth_token()
