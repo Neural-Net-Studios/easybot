@@ -21,6 +21,6 @@ while True:
         id = messages['items'][0]['last_message']['from_id']
         text = messages['items'][0]['last_message']['text']
         if text.lower() == 'hello':
-            vk.method('messages.send', {'peer_id':id, 'random_id':0, 'message': 'Çäðàâñòâóé!'})
+            vk.method('messages.send', {'peer_id':id, 'random_id':0, 'message': 'Hi!'})
         else:
             vk.method('messages.send', {'peer_id':id, 'random_id':0, 'message': 'ERROR'})
