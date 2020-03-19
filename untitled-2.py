@@ -1,7 +1,7 @@
 import vk_api
 
 
-token = 'токен'
+token = 'ГІГ®ГЄГҐГ­'
 
 vk=vk_api.VkApi(token=token)
 vk._auth_token()
@@ -20,7 +20,7 @@ while True:
         print(messages)
         id = messages['items'][0]['last_message']['from_id']
         text = messages['items'][0]['last_message']['text']
-        if text.lower() == 'привет':
-            vk.method('messages.send', {'peer_id':id, 'random_id':0, 'message': 'Здравствуй!'})
+        if text.lower() == 'hello':
+            vk.method('messages.send', {'peer_id':id, 'random_id':0, 'message': 'Г‡Г¤Г°Г ГўГ±ГІГўГіГ©!'})
         else:
             vk.method('messages.send', {'peer_id':id, 'random_id':0, 'message': 'ERROR'})
